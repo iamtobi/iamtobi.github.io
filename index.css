@@ -24,14 +24,16 @@
   }
   #sec1 {
     width: 100%;
-    height: 775px;
+    height: 700px;
+    display:  grid;
+    grid-template-columns: auto auto;
     background-image: var(--bggg);
     background-size: cover;
     background-attachment: fixed;
   }
   #sec2 {
     width: 100%;
-    height: 775px;
+    height: 700px;
     background-image: var(--bg);
     background-size: cover;
     background-attachment: fixed;
@@ -39,15 +41,13 @@
   }
   #sec3 {
     width: 100%;
-    height: 775px;
+    height: 700px;
     background-image: var(--bgg);
     background-size: cover;
     background-attachment: fixed;
   }
 
   #position1 {
-    padding: 20px;
-    align-items: baseline;
   }
   #position1 > p {
     font-size: 90px;
@@ -55,7 +55,7 @@
     font-weight: bolder;
     width: 50%;
     color: white;
-    margin: 200px 0px 0px 20px;
+    margin: 200px 0px 0px 30px;
   }
   #position1 > p > button {
     width: fit-content;
@@ -77,6 +77,18 @@
   #template > sub{
     font-size: 10px;
     color: white;
+  }
+  #position2 > div{
+    text-align: center;
+    margin: 200px 200px 0px 0px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    gap: 20px;
+  }
+  #position2 > div > img{
+    width: 150px;
   }
   
 }
