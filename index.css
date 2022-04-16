@@ -1,94 +1,46 @@
-@media (min-width: 1024px) {
-  body {
-    background-color: black;
-    margin: 0 auto;
-  }
-  a {
-    color: unset;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  * {
-    box-sizing: border-box;
-  }
+@media (min-width: 320px) and (max-width: 790px) {
   :root {
-    --bg: url("https://w.wallhaven.cc/full/yj/wallhaven-yjq3ox.jpg");
-    --bgg: url("https://w.wallhaven.cc/full/2k/wallhaven-2k9ozm.png");
-    --bggg: url(img/bgg.jpg);
-    --primary: rgba(255, 200, 0, 0.5);
+    --primary: rgba(255, 198, 10, 0.8);
   }
-
-  main {
-    position: absolute;
-    width: 100%;
-  }
-  #sec1 {
-    width: 100%;
-    height: 700px;
-    display:  grid;
-    grid-template-columns: auto auto;
-    background-image: var(--bggg);
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  #sec2 {
-    width: 100%;
-    height: 700px;
-    background-image: var(--bg);
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 10px;
-  }
-  #sec3 {
-    width: 100%;
-    height: 700px;
-    background-image: var(--bgg);
-    background-size: cover;
-    background-attachment: fixed;
-  }
-
-  #position1 {
-  }
-  #position1 > p {
-    font-size: 90px;
-    font-family: sans-serif;
-    font-weight: bolder;
-    width: 70%;
-    color: white;
-    margin: 200px 0px 0px 30px;
-  }
-  #position1 > p > button {
-    width: fit-content;
-    font-size: 40px;
-    font-family: sans-serif;
-    font-weight: bolder;
+  header{
     background-color: var(--primary);
-    border: none;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+    flex-direction: column;
+    display: flex;
+
   }
-  #template{
-    color: rgba(255, 200, 0, 1);
+  header > h1{
+    font-family: Dongle;
+    font-size: 50px;padding:10px;
+    height: fit-content;
+    text-align: center;
+    color: white;
+  }
+  header > i{
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    color: var(--primary);
+  }
+  #db-menu{
+    width: 100%;
+    min-height: 100px;
+    background-color: white;display: none;
+    grid-template-columns: auto auto;
+  }
+  #db-menu > p{
     text-align: center;
     font-family: Poppins;
-    font-size: xx-large;
   }
-  #template > sub{
-    font-size: 10px;
-    color: white;
+  body{
+    margin:  0 auto;
   }
-  #position2 > div{
+  main > #sec1 > h2{
+    font-family: Poppins;
+    padding: 5px;
+    height: fit-content;
+  }
+  #speciality-ic{
     text-align: center;
-    margin: 200px 200px 0px 0px;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-items: center;
-    gap: 20px;
   }
-  #position2 > div > img{
-    width: 150px;
-  }
-  
+
 }
