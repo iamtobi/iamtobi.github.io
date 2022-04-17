@@ -48,12 +48,16 @@
   }
   body{
     margin:  0 auto;
+    background-image: url('https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   }
   .subhead{
     font-family: Poppins;
     text-align: center;
     height: fit-content;
     text-transform: capitalize;
+  }
+  #sec1{
+    background-color: #ffffff99;
   }
   main > #sec1 > #sec1x2 > h2{
     font-family: Poppins;
