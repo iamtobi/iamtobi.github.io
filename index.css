@@ -34,8 +34,9 @@
   body{
     margin:  0 auto;
   }
-  main > #sec1 > h2{
+  main > #sec1 > #sec1x1 > h2{
     font-family: Poppins;
+    text-align: center;
     padding: 5px;
     height: fit-content;
   }
