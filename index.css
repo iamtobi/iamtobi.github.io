@@ -144,7 +144,9 @@ display: none;
 .dd-webtype:hover .webtype-content{
   display: flex;
 }
-
+.sec1x4{
+  background-color: white;
+}
 .sub1x4{
   display: flex;
   flex-flow: wrap;
