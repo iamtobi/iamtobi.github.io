@@ -117,5 +117,20 @@
 #sec2 input[type=submit]:active{
   background-color: green !important;
 }
+#sec1x3 div{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+#sec1x3 div i{
+  font-size: small;
+  background-color: #1221;
+}
+footer{
+  width: 100%;
+  min-height: 100px;
+  background-color: black;
+}
 
 }
