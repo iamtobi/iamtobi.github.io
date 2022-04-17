@@ -107,7 +107,7 @@
 #sec2 div > input[type=text]{
   width: 50%;
   padding: 10px;
-  border: none;
+  border: 1px solid var(--primary);
 }
 #sec2 input[type=submit]{
   width: 100px;
