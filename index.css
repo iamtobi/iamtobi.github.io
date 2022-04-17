@@ -101,10 +101,13 @@
   padding: 10px;
   border: none;
 }
-#sec2 input[type=button]{
+#sec2 input[type=submit]{
   width: 100px;
   background-color: var(--primary);
   border: none;
+}
+#sec2 input[type=submit]:active{
+  background-color: green !important;
 }
 
 }
