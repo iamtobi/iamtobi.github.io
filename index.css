@@ -119,8 +119,8 @@
 }
 #sec1x3 div{
   width: 100%;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
+display: flex;
+flex-flow: wrap;
   gap: 10px;
   justify-content: center;
 }
@@ -128,6 +128,18 @@
   font-size: small;
   background-color: #1221;
 }
+.sub1x4{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+.sub1x4 img {
+width: 100px;
+border-radius: 50px;
+}
+
+
+
 footer{
   margin-top: 20px;
   width: 100%;
