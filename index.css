@@ -22,13 +22,24 @@
     background-color: white;
     color: var(--primary);
   }
+  #dropdown:hover #ddmenu{
+    display: grid;
+  }
+  #dd-caret{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    color: var(--primary);
+  }
   #db-menu{
     width: 100%;
+    display: none;
     min-height: 100px;
-    background-color: white;display: none;
+    background-color: white;
+    display: none;
     grid-template-columns: auto auto;
   }
-  #db-menu > p{
+  #db-menu > li{
     text-align: center;
     font-family: Poppins;
   }
@@ -39,6 +50,7 @@
     font-family: Poppins;
     text-align: center;
     height: fit-content;
+    text-transform: capitalize;
   }
   main > #sec1 > #sec1x2 > h2{
     font-family: Poppins;
@@ -48,10 +60,25 @@
   #speciality-ic{
     text-align: center;
   }
+  img{
+    width: 100%;
+  }
+  div.examples{
+    display: flex;
+    justify-content: center;
+  }
+  .examples a{
+    padding: 10px;
+    text-align:center;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: blue;
+    font-family: Fredoka;
+
+  }
   #sec1x1 > img, p{
     width: 100%;
     text-align: center;
   }
-
 
 }
