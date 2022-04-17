@@ -1,6 +1,6 @@
 @media (min-width: 320px) and (max-width: 790px) {
   :root {
-    --primary: rgba(255, 198, 10, 0.8);
+    --primary: rgba(255, 198, 10, 0.6);
   }
   header{
     background-color: var(--primary);
