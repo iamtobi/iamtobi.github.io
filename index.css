@@ -122,6 +122,7 @@
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 10px;
+  justify-content: center;
 }
 #sec1x3 div i{
   font-size: small;
