@@ -117,17 +117,33 @@
 #sec2 input[type=submit]:active{
   background-color: green !important;
 }
-#sec1x3 div{
+.ddwebtype{
+  display: inline-block;
+}
+.dd-webtypedd{
   width: 100%;
-display: flex;
-flex-flow: wrap;
+  padding: 10px;
+  background-color: white;
+}
+ .webtype-content{
+  width: 100%;
+display: none;
   gap: 10px;
+  flex-wrap: wrap;
+  grid-template-columns: auto auto;
   justify-content: center;
 }
-#sec1x3 div i{
+#sec1x3 div > i{
   font-size: small;
-  background-color: #1221;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
 }
+.dd-webtype:hover .webtype-content{
+  display: flex;
+}
+
 .sub1x4{
   display: flex;
   flex-flow: wrap;
