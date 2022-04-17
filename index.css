@@ -149,6 +149,7 @@ display: none;
   display: flex;
   flex-flow: wrap;
   justify-content: center;
+  background-color: white;
 }
 .sub1x4 img {
 width: 100px;
