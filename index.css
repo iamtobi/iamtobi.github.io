@@ -1,6 +1,6 @@
 @media (min-width: 320px) and (max-width: 790px) {
   :root {
-    --primary: rgba(255, 180, 10, 0.8);
+    --primary: rgba(255, 180, 10, 0.7);
   }
   header{
     background-color: var(--primary);
@@ -65,6 +65,7 @@
   }
   div.examples{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
   .examples a{
@@ -72,8 +73,11 @@
     text-align:center;
     text-decoration: none;
     text-transform: capitalize;
-    color: blue;
-    font-family: Fredoka;
+    color: black;
+    background-color: var(--primary);
+    font-family: Poppins;
+    margin-bottom: 5px;
+    opacity: 0.8;
 
   }
   #sec1x1 > img, p{
