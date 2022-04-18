@@ -17,9 +17,12 @@
   header > h1{
     font-family: Poppins;
     letter-spacing: 5px;
-    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    height: fit-content;
     color: white;
+    width: 50%;
   }
   header > i{
     text-align: center;
@@ -185,7 +188,6 @@ width: 100px;
 .progress{
   text-align: center;
 }
-
 footer{
   margin-top: 20px;
   width: 100%;
@@ -198,4 +200,78 @@ footer{
 footer div address p i{
   color: white;padding: 5px;
 }
+}
+
+
+
+
+@media (min-width: 1024px) {
+  :root{
+    --primary: wheat;
+  }
+  body{
+    margin: 0 auto;
+  }
+  a{
+    color: unset;
+    text-decoration: none;
+  }
+  li{
+    list-style: none;
+  }
+  header{
+    width: 100%;
+    min-height: 40px;
+    background-color: var(--primary);
+    display: flex;
+  }
+  header h1{
+color: black;
+width: 100%;
+font-family: Poppins;
+font-size: large;
+margin-left: 50px;
+  }
+header sub{
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: 300;
+  font-size: small;
+  font-family: Poppins;
+  color: gray;
+}
+  .dropdown{
+    background-color: black;
+    text-align: center;
+    min-width: 500px;
+  }
+  .dropdown:hover .db-menu{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  #dd-caret{
+    margin-top: 20px;
+    color: white;
+    
+  }
+  .db-menu{
+    position: absolute;
+    z-index: 1;
+    display: none;
+    padding-top: 50px;
+    min-height: 50px;
+    width: 500px;
+    border: 1px solid var(--primary);
+    border-top: none;
+  }
+  .db-menu a {
+    text-decoration: none;
+    font-family: Poppins;
+    padding: 10px;
+  }
+  .db-menu a:hover{
+    background-color: #80808050 ;
+  }
 }
