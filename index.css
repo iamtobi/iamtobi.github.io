@@ -152,11 +152,8 @@
   width: 100%;
 display: none;
   gap: 10px;
-  flex-wrap: wrap;
   grid-template-columns: auto auto;
   justify-content: center;
-  position: absolute;
-  z-index: 1;
   background-color: white;
   padding-bottom: 10px;
 }
@@ -167,7 +164,7 @@ display: none;
   background-color: white;
 }
 .dd-webtype:hover .webtype-content{
-  display: flex;
+  display: grid;
 }
 .sec1x4{
   background-color: white;
