@@ -95,13 +95,13 @@
   img{
     width: 100%;
   }
-  div.examples{
+  div#examples{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
   }
-  .examples a{
+  #examples a{
     padding: 10px;
     text-align:center;
     text-decoration: none;
@@ -273,5 +273,53 @@ header sub{
   }
   .db-menu a:hover{
     background-color: #80808050 ;
+  }
+  main{
+    width: 100%;
+  }
+  #sec1{
+    display: grid;
+    grid-template-areas: 'sec1x1 sec1x1 sec1x2'
+                                      'sec1x1 sec1x1 examples'
+                                      'sec1x1 sec1x1 sec1x3';
+  }
+  #sec1x1{
+    grid-area: sec1x1;
+    width: 100%;
+    min-height: 300px;
+  }
+#sec1x1 > img{
+  width: 100%;
+}
+#sec1x1 p{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 70%;
+}
+  #sec1x2{
+    grid-area: sec1x2;
+    text-align: center;
+  }
+  #specility-i{
+    text-align: center;
+  }
+  #examples{
+    grid-area: examples;
+  }
+  #examples p{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #sec1x3{
+    grid-area: sec1x3;
+    width: 100%;
+  }
+  .subhead{
+    font-family: Poppins;
+    text-align: center;
   }
 }
