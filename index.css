@@ -114,7 +114,6 @@
   }
 #sec2 > form > input[type=email]{
   width: 50%;
-  padding: 10px;
   border: 1px solid var(--primary);
 }
 #sec2 > form >  input[type=submit]{
