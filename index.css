@@ -10,6 +10,7 @@
   header{
     background-color: var(--primary);
     flex-direction: column;
+    background-blend-mode: screen;
     display: flex;
 
   }
@@ -25,6 +26,9 @@
     width: 100%;
     background-color: white;
     color: var(--primary);
+  }
+  p{
+    font-family: Arial, Helvetica, sans-serif;
   }
   sub.subhead{
     font-size: small;
@@ -43,7 +47,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    color: var(--primary);
+    color: black;
   }
   .db-menu{
     width: 100%;
@@ -81,6 +85,9 @@
   }
   #speciality-ic{
     text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
   }
   img{
     width: 100%;
@@ -177,7 +184,6 @@ display: none;
 }
 .sub1x4 img {
 width: 100px;
-border: 10px solid var(--border-color);
 }
 .progress{
   text-align: center;
