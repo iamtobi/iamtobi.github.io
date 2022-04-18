@@ -1,0 +1,29 @@
+header {
+  width: 100%;
+  min-height: 30px;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+#header1 {
+}
+#header1 > img {
+  height: 100px;
+  margin: 0 auto;
+}
+#header2 {
+  text-align: center;
+  font-family: Elephant;
+}
+#header3 {
+  text-align: center;
+}
+input {
+  margin: 0 auto;
+  width: 60%;
+  margin-top: 30px;
+  text-align: center;
+  border: none;
+  padding: 10px;
+  background-color: #00800020;
+}
