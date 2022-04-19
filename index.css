@@ -280,8 +280,8 @@ header sub{
   }
   #sec1{
     display: grid;
-    grid-template-areas: 'sec1x1 sec1x1 sec1x1'
-                                      'sec1x2 examples sec1x3';
+    grid-template-areas: 'sec1x1 sec1x1 sec1x1 sec1x1 sec1x1' 
+                                      ;
                                       
  
   }
