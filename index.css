@@ -279,9 +279,9 @@ header sub{
     width: 100%;
   }
   #sec1{
-    display: grid;
-    grid-template-areas: 'sec1x1 sec1x1 sec1x1 sec1x1 sec1x1' 
-                                      ;
+    display: flex;
+    
+                                      ; 
                                       
  
   }
@@ -302,7 +302,9 @@ display: none;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 70%;
+}
+#sec1x1 p::after{
+  content: "Also we have the deligence";
 }
 #sec1x1{
   color: white !important;
