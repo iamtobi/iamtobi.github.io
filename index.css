@@ -41,6 +41,10 @@
     display: inline-block;
     min-height: 10px;
   }
+  .dropdown span{
+    font-family: Poppins;
+    color: var(--primary);
+  }
   .dropdown:hover .db-menu{
     display: grid;
   }
@@ -200,6 +204,9 @@ footer{
 footer div address p i{
   color: white;padding: 5px;
 }
+.ds{
+  display: none;
+}
 }
 
 
@@ -209,162 +216,146 @@ footer div address p i{
   :root{
     --primary: wheat;
     --background-color: rgba(1, 29, 20, 0.847);
+    --paralleximage: url('https: //images.unsplash.com/photo-1650999934328-eaef7ddf2ba7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    --pimg: url('img/sandro-gonzalez-P3K1S3s22lI-unsplash.jpg')
+    --color1: #0a1213;
+    --color2: #697765;
+    --color3: #3f4f42;
+    --color4: #24322a;
+    --color5: #323b3c;
+    --color6: #3c3c3a;
+    --color7: #242323;
+    --font1: Poppins;
+    --font2: Dongle;
   }
   body{
     margin: 0 auto;
+  }
+  header{
+    margin:  auto;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    margin-bottom: 100px;
+    min-height: 30px;
+    align-items: center;
+background-image: url('img/wolfgang-hasselmann-CsQD3CyTR0M-unsplash.jpg');
+    display: flex;
+    color: var(--color7);
+    top: 0%;
   }
   a{
     color: unset;
     text-decoration: none;
   }
-  li{
-    list-style: none;
-  }
-  header{
-    width: 100%;
-    min-height: 40px;
-    background-color: var(--primary);
-    display: flex;
-  }
   header h1{
-color: black;
-width: 100%;
-font-family: Poppins;
-font-size: large;
-margin-left: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    font-family: var(--font1);
+    font-size: medium;
   }
-header sub{
-  width: 100%;
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  font-weight: 300;
-  font-size: small;
-  font-family: Poppins;
-  color: gray;
-}
-  .dropdown{
-    background-color: black;
+  header sub{
+    width: 100%;
     text-align: center;
-    min-width: 500px;
-  }
-  .dropdown:hover .db-menu{
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-  #dd-caret{
-    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
     color: white;
-    
+  }
+  .dropdown{
+    width: 100%;
+  }
+  .dropdown span{
+   font-family: var(--font1); 
+   display: none;
+  }
+  .dropdown i{
+    display: none;
   }
   .db-menu{
-    position: absolute;
-    z-index: 1;
-    display: none;
-    padding-top: 50px;
-    min-height: 50px;
-    background-color: white;
-    width: 500px;
-    border: 1px solid var(--primary);
-    border-top: none;
+    display: flex;
+    gap: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: var(--font1);
+    font-size: x-small;
+    font: bolder;
   }
-  .db-menu a {
-    text-decoration: none;
-    font-family: Poppins;
+  .db-menu a > li{
+    width: max-content
   }
-  .db-menu a:hover{
-    background-color: #80808050 ;
-  }
-  main{
-    width: 100%;
+  li{
+    list-style-type: none;
   }
   #sec1{
-    display: flex;
-    
-                                      ; 
-                                      
- 
+    width: 100%;
   }
   #sec1x1{
-    grid-area: sec1x1;
     width: 100%;
-    min-height: 200px;
+    background-size: cover;
+    background-image: url('img/wolfgang-hasselmann-CsQD3CyTR0M-unsplash.jpg');
     background-attachment: fixed;
-    background-image: url('/img/bg.jpg');
-    background-color: var(--background-color);
-
+    height: 100%;
+    position: absolute;
+    background-position: bottom;
   }
-#sec1x1 > #img1{
+  #sec1x1 > #img1 {
 display: none;
-}
-#sec1x1 p{
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-#sec1x1 p::after{
-  content: "Also we have the deligence";
-}
-#sec1x1{
-  color: white !important;
-}
+  }
+  #sec1x1 .subhead{
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 50px;
+    color: var(--color7);
+    transform: translate(0%, 60%);
+  }
+  #sec1x1 p {
+    width: 500px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  #sec1x1 div{
+    position: absolute;
+    top: 40%;
+    left: 50px;
+  }
+ #sec1x1 #prop{
+   height: 500px;
+   position: absolute;
+   left: 40%;
+   top: 26.3%;
+   mask-image: linear-gradient(to bottom, black, transparent);
+   image-rendering: pixelated;
+ }
   #sec1x2{
-    grid-area: sec1x2;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    min-height: 500px;
+  }
+  #sec1x2 .subhead{
+    transition: all 2s;
+    color: var(--color7);
+    font-size: 50px;
     text-align: center;
-  }
-  #speciality-ic{
-    text-align: center;
-  }
-  #examples{
-    grid-area: examples;
-  }
-  #examples p{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
     font-family: Arial, Helvetica, sans-serif;
   }
-  #examples a{
-background-color: var(--primary);
-padding: 10px;
-font-family: Poppins;
-text-transform: capitalize;
-  }
-  #examples a:hover{
-    background-color: white;
-  }
-  a:active{
-    background-color: green;
-  }
-  #sec1x3{
-    grid-area: sec1x3;
-    width: 100%;
-    min-height: 300px;
-  }
-  .dd-webtypedd{
-    display: none;
-  }
-  .webtype-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    gap: 20px;
-    justify-content: center;
-  }
-  .subhead{
-    font-family: Poppins;
-    text-align: center;
-  }
-  #sec1x4{
-    width: 100%;
-    min-height: 300px;
-    grid-area: sec1x4;
-    justify-content: center;
-  }
-  #sec1x4 .sub1x4 p{
-    font-family: Arial, Helvetica, sans-serif;
-    width: 80%;
-    justify-content: center;
-  }
+#speciality-ic{
+  text-align: center;
+  display: flex;
+}
+#speciality-ic i{
+  width: 100%;
+  font-size: 100px;
+  text-shadow: 1px 2px 5px var(--color2);
+}
+#examples {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  min-height: 300px;
+}
+
 }
