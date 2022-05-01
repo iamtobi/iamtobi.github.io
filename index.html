@@ -6,8 +6,8 @@
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="asset.css">
         <link rel="stylesheet"  href="dindex.css">
-        <script src="https://kit.fontawesome.com/29eef0e19b.js" crossorigin="anonymous"></script>
-        <script src="index.js"></script>
+        <script src="https://kit.fontawesome.com/29eef0e19b.js" crossorigin="anonymous">
+        </script>
     </head>
     <body>
     <header>
@@ -85,8 +85,10 @@
           <h2 class="subhead">Need help?</h2>
           <form method="post" data-netlify="true" id="hire-form" name="contact" action="/pages/success">
             <textarea name="message" placeholder="Send a message..."></textarea>
-            <br>
-            <input type="email" name="email" placeholder="Email to reply." ><input type="submit"  value="contact me"></form>
+            <h1 id="sub"></h1>
+            <label for="email">
+            <input type="email" name="email" placeholder="Email to reply." ><input type="submit"  value="contact me">
+          </label></form>
         </section>
         </main>
         <footer>
@@ -97,6 +99,7 @@
           </div>
           <div class="more"></div>
         </footer>
+        <script src="index.js" crossorigin="anonymous" defer></script>
     </body>
 <!--
   THIS IS A NEW LINE TO CREATE A DIFFERENT LAYOUT AND ENVIRONMENT FOR THE DESKTOP PORTFOLIO ALTHOUGH WILL BE A PAIN IN THE ASS BUT FOR THE MAIN TIME BEFORE ANY PROPER UPDATES
