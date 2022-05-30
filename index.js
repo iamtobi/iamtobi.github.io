@@ -16,4 +16,4 @@ function submitRequest() {
   return 0;
 }
 submitRequest();
-document.getElementById("sub").innerHTML = "Email";
+var x = window.matchMedia("(min-width: 1024px)");
